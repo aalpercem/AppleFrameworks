@@ -11,18 +11,10 @@ struct FrameworkDetailView: View {
   
   var framework: Framework
   @Binding var isShowingDetailView: Bool
+  @State private var isShowingSafariView: Bool = false
   
   var body: some View {
-    VStack(spacing: 15) {      
-      HStack {
-        Spacer()
-        AFCloseButton(
-          action: {
-            self.isShowingDetailView = false
-          }
-        )
-      }
-      
+    VStack(spacing: 30) {      
       Spacer()
       
       FrameworkTitleView(framework: framework)
@@ -36,10 +28,14 @@ struct FrameworkDetailView: View {
         buttonTitle: "Learn More",
         action: {
           print("Learn More button tapped")
+          self.isShowingSafariView = true
         }
       )
     }
     .padding()
+    .sheet(isPresented: self.$isShowingSafariView) {
+      SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
+    }
   }
 }
 

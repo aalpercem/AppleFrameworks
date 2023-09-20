@@ -11,16 +11,20 @@ struct AFCloseButton: View {
   var action: () -> Void
   
   var body: some View {
-    Button {
-      self.action()
-    } label: {
-      Image(systemName: "xmark")
-        .padding(8)
-        .foregroundColor(Color(.label))
-        .background(Color(.label).opacity(0.1))
-        .imageScale(.large)
-        .cornerRadius(20)
-        .frame(width: 44, height: 44)
+    HStack {
+      Spacer()
+      
+      Button {
+        self.action()
+      } label: {
+        Image(systemName: "xmark")
+          .padding(8)
+          .foregroundColor(Color(.label))
+          .background(Color(.label).opacity(0.1))
+          .imageScale(.large)
+          .cornerRadius(20)
+          .frame(width: 44, height: 44)
+      }
     }
   }
 }

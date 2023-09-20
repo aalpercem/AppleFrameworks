@@ -16,6 +16,8 @@
 		85BFA2E82ABA192500844310 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BFA2E72ABA192500844310 /* FrameworkDetailView.swift */; };
 		85BFA2EA2ABA1B1A00844310 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BFA2E92ABA1B1A00844310 /* AFButton.swift */; };
 		85BFA2EC2ABA1EDC00844310 /* AFCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BFA2EB2ABA1EDC00844310 /* AFCloseButton.swift */; };
+		85F3DF142ABADBF100D98691 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3DF132ABADBF100D98691 /* SafariView.swift */; };
+		85F3DF162ABAE11400D98691 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3DF152ABAE11400D98691 /* FrameworkTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		85BFA2E72ABA192500844310 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		85BFA2E92ABA1B1A00844310 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		85BFA2EB2ABA1EDC00844310 /* AFCloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFCloseButton.swift; sourceTree = "<group>"; };
+		85F3DF132ABADBF100D98691 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		85F3DF152ABAE11400D98691 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +68,12 @@
 			children = (
 				85BFA2ED2ABA206300844310 /* Components */,
 				85BFA2EF2ABA208500844310 /* Models */,
+				85F3DF172ABAE2BB00D98691 /* ViewModels */,
 				85BFA2EE2ABA207900844310 /* Views */,
 				857120622AB9DAC00034476A /* AppleFrameworksApp.swift */,
 				857120662AB9DAC00034476A /* Assets.xcassets */,
 				857120682AB9DAC00034476A /* AppleFrameworks.entitlements */,
 				857120692AB9DAC00034476A /* Preview Content */,
-				854F09442ABAD1F500F8DB26 /* FrameworkGridViewModel.swift */,
 			);
 			path = AppleFrameworks;
 			sourceTree = "<group>";
@@ -85,6 +89,7 @@
 		85BFA2ED2ABA206300844310 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				85F3DF182ABAE32D00D98691 /* UIKit Components */,
 				85BFA2E92ABA1B1A00844310 /* AFButton.swift */,
 				85BFA2EB2ABA1EDC00844310 /* AFCloseButton.swift */,
 			);
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				85BFA2E52ABA08E500844310 /* FrameworkGridView.swift */,
+				85F3DF152ABAE11400D98691 /* FrameworkTitleView.swift */,
 				85BFA2E72ABA192500844310 /* FrameworkDetailView.swift */,
 			);
 			path = Views;
@@ -106,6 +112,22 @@
 				85BFA2E32ABA065F00844310 /* Framework.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		85F3DF172ABAE2BB00D98691 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				854F09442ABAD1F500F8DB26 /* FrameworkGridViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		85F3DF182ABAE32D00D98691 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				85F3DF132ABADBF100D98691 /* SafariView.swift */,
+			);
+			path = "UIKit Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +201,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				85BFA2E82ABA192500844310 /* FrameworkDetailView.swift in Sources */,
+				85F3DF162ABAE11400D98691 /* FrameworkTitleView.swift in Sources */,
 				85BFA2E62ABA08E500844310 /* FrameworkGridView.swift in Sources */,
 				85BFA2EC2ABA1EDC00844310 /* AFCloseButton.swift in Sources */,
 				85BFA2E42ABA065F00844310 /* Framework.swift in Sources */,
+				85F3DF142ABADBF100D98691 /* SafariView.swift in Sources */,
 				85BFA2EA2ABA1B1A00844310 /* AFButton.swift in Sources */,
 				854F09452ABAD1F500F8DB26 /* FrameworkGridViewModel.swift in Sources */,
 				857120632AB9DAC00034476A /* AppleFrameworksApp.swift in Sources */,
